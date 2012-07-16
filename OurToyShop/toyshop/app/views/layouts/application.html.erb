@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toyshop</title>
+
+  <!--  <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+
+
+<footer>
+  <div class="container">
+    Rails Girls 2012
+  </div>
+</footer>
+
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+  <div class="container">
+      <a class="brand" href="/">The Idea app</a>
+    <ul class="nav">
+        <li class="active"><a href="/ideas">Ideas</a></li>
+      </ul>
+    </div>
+  </div>
+</div>-->
+
+| <%= link_to "Product Catalogue", products_path %> |
+<%= link_to "Leave Site", :controller => "welcome", :action => "thank_you" %> |
+<%= link_to "Register", :controller => "welcome", :action => "register" %> |
+<%= link_to "Home", :controller => "welcome", :action => "home" %> |
+
+<div class="container">
+  <%= yield %>
+</div>
+
+
+</body>
+</html>

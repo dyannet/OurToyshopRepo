@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   # GET /products/1.xml
+  before_filter :authenticate, :except => [:index, :show]
   def show
     @product = Product.find(params[:id])
 
@@ -40,7 +41,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.xml
   def create
-    @product = Product.new(params[:product])
+    @product = current_user.products.new(params[:product])
 
     respond_to do |format|
       if @product.save

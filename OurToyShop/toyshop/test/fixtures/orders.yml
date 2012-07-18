@@ -1,10 +1,10 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  address: MyText
-  email: MyString
-  pay_type: MyString
+  name: Poppy Dolan
+  address: Dolan Cottage
+  email: poppy@example.org
+  pay_type: Cheque
 
 two:
   name: MyString

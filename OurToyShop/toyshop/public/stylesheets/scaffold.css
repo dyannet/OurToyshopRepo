@@ -54,3 +54,31 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+/* Styles for order form */
+.toyshop_form fieldset {
+    background: #efe;
+}
+.toyshop_form legend {
+    color: #dfd;
+    background: #141;
+    font-family: sans-serif;
+    padding: 0.2em 1em;
+}
+.toyshop_form label {
+    width: 5em;
+    float: left;
+    text-align: right;
+    padding-top: 0.2em;
+    margin-right: 0.1em;
+    display: block;
+}
+.toyshop_form select, .toyshop_form textarea, .toyshop_form input {
+    margin-left: 0.5em;
+}
+.toyshop_form .submit {
+    margin-left: 4em;
+}
+.toyshop_form div {
+    margin: 0.5em 0;
+}

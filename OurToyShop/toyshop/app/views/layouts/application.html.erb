@@ -35,15 +35,7 @@
 <%= link_to "Register", :controller => "welcome", :action => "register" %> |
 <%= link_to "Your Cart", :controller => "carts", :action => "your_cart" %> |
 
-<div id='header'>
-  <% if logged_in? %>
-      <%= current_user.email %> |
-      <%= link_to 'Logout', logout_path %> |
-      <%= link_to "Create User", new_user_path %> |
-  <% else %>
-      <%= link_to "Login", login_path %> |
-  <% end %>
-</div>
+
 
 <%= yield %>
 

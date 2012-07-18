@@ -1,5 +1,7 @@
 Toyshop::Application.routes.draw do
 
+  get "users/users"
+
   resources :line_items
 
   resources :carts

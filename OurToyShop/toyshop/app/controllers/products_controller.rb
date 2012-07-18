@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   # GET /products/1.xml
-  before_filter :authenticate, :except => [:index, :show]
+  #before_filter :authenticate, :except => [:index, :show]
   def show
     @product = Product.find(params[:id])
 

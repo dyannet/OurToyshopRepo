@@ -1,12 +1,8 @@
 Toyshop::Application.routes.draw do
 
-  get "users/users"
-
+  resources :orders
   resources :line_items
-
   resources :carts
-
-  get "users/new"
 
   get "welcome/home"
   get "welcome/thank_you"
